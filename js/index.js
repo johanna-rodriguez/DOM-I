@@ -45,22 +45,27 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let link1 = document.querySelector("a:nth-of-type(1)")
 link1.textContent = siteContent['nav']['nav-item-1']
+link1.style.color = 'green'
 
 let link2 = document.querySelector("a:nth-of-type(2)")
 link2.textContent = siteContent['nav']['nav-item-2']
+link2.style.color = 'green'
 
 let link3 = document.querySelector("nav a:nth-of-type(3)")
 link3.textContent = siteContent['nav']['nav-item-3']
+link3.style.color = 'green'
 
 let link4 = document.querySelector("nav a:nth-of-type(4)")
 link4.textContent = siteContent['nav']['nav-item-4']
+link4.style.color = 'green'
 
 let link5 = document.querySelector("nav a:nth-of-type(5)")
 link5.textContent = siteContent['nav']['nav-item-5']
+link5.style.color = 'green'
 
 let link6 = document.querySelector("nav a:nth-of-type(6)")
 link6.textContent = siteContent['nav']['nav-item-6']
-
+link6.style.color = 'green'
 
 
 let title = document.querySelector(".cta-text h1")
@@ -132,3 +137,15 @@ contactEmail.textContent = siteContent['contact']['email']
 
 let footer = document.querySelector("footer p")
 footer.textContent = siteContent['footer']['copyright']
+
+
+const anchor1 = document.createElement('a');
+anchor1.textContent = 'Extra-Nav-1';
+anchor1.style.color='green'
+document.querySelector('nav').prepend(anchor1);
+
+
+const anchor2 = document.createElement('a');
+anchor2.textContent = 'Extra-Nav-2';
+anchor2.style.color='green'
+document.querySelector('nav').appendChild(anchor2);
